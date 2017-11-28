@@ -8,10 +8,14 @@ public class GuGuDanOddNumberTest {
 		while(i<=5) {
 			
 			while(j<=9) {
-				if((i*j) %2 ==0) continue;
+				if((i*j) %2 ==0) {
+					System.out.println(i*j);
+					continue;
+				}
 				System.out.println(i+" * "+j+" = "+(i*j));
-				j++;
+				
 			}
+			j++;
 			i++;
 		}
 		
